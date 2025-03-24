@@ -1,0 +1,41 @@
+{
+  "name": "slip-verification",
+  "version": "1.0.0",
+  "description": "ระบบตรวจสอบสลิปโอนเงินอัตโนมัติด้วย AI",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "slip-verify": "./index.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "cli": "node index.js verify",
+    "verify": "node index.js verify",
+    "train": "node index.js train",
+    "batch": "node index.js batch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slip",
+    "verification",
+    "banking",
+    "ocr",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "cli-table3": "^0.6.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "tesseract.js": "^5.0.0",
+    "sharp": "^0.33.4",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
